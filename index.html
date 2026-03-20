@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EJ Soriano - Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="Assets/icon.png" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <img src="Assets/icon.png" alt="EJ Logo" class="logo" />
+
+      <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">
+        <span id="menuIcon">☰</span>
+      </button>
+    </div>
+
+    <nav id="mobileNav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Tech Stack</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-profile">
+        <img src="Assets/profile2.jpg" alt="EJ profile photo" />
+      </div>
+      <div class="hero-text">
+        <h1>EJ Soriano</h1>
+        <h2>Software Engineer</h2>
+        <p>
+          I build clean, functional, and user-focused web applications with strong attention
+          to interface design, system structure, and real-world usability.
+        </p>
+        <div class="buttons">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="./Downloads/EJSorianoCV.docx" class="btn secondary" download>Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="section-header">
+      <h3 class="section-title">About</h3>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-main">
+        <p class="about-text">
+          I’m an Information Technology student and aspiring full-stack web developer
+          with a strong interest in building clean, functional, and user-focused web
+          applications. My experience comes from developing academic and personal
+          projects such as management systems, booking platforms, and business-oriented
+          tools using technologies like HTML, CSS, JavaScript, PHP, and MySQL.
+        </p>
+
+        <p class="about-text">
+          I enjoy turning ideas into practical digital solutions that solve real-world
+          problems. I focus on writing structured and maintainable code while paying
+          close attention to interface design, usability, and overall user experience.
+          Currently, I’m continuing to improve my skills in modern web development and
+          exploring tools that help me build more scalable and efficient applications.
+        </p>
+      </div>
+
+      <div class="about-side">
+        <div class="about-card">
+          <span class="about-label">Focus</span>
+          <p>Full-Stack Web Development</p>
+        </div>
+
+        <div class="about-card">
+          <span class="about-label">Interests</span>
+          <p>Systems, UI Design, Automation</p>
+        </div>
+
+        <div class="about-card">
+          <span class="about-label">Current Goal</span>
+          <p>Building practical and scalable web applications</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <h3 class="section-title">Projects</h3>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h4>Student Records System</h4>
+        <p>
+          Student data management system with authentication and CRUD
+          operations.
+        </p>
+        <div class="techstack-list">
+          <span class="techstack">HTML</span>
+          <span class="techstack">CSS</span>
+          <span class="techstack">PHP</span>
+          <span class="techstack">MySQL</span>
+          <span class="techstack">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="#">Live Demo</a><a href="#">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h4>Sales & Inventory Management System</h4>
+        <p>
+          Inventory tracking and sales processing system with reporting
+          features.
+        </p>
+        <div class="techstack-list">
+          <span class="techstack">PHP</span>
+          <span class="techstack">MySQL</span>
+          <span class="techstack">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="#">Live Demo</a><a href="#">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h4>Web-based Booking and Reservation System</h4>
+        <p>
+          Online booking system with real-time availability and email
+          notifications.
+        </p>
+        <div class="techstack-list">
+          <span class="techstack">HTML</span>
+          <span class="techstack">CSS</span>
+          <span class="techstack">PHP</span>
+          <span class="techstack">MySQL</span>
+          <span class="techstack">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="#">Live Demo</a><a href="#">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h4>Restaurant Official Website</h4>
+        <p>
+          Responsive website for a local restaurant with menu display and
+          reservation system.
+        </p>
+        <div class="techstack-list">
+          <span class="techstack">HTML</span>
+          <span class="techstack">CSS</span>
+          <span class="techstack">JavaScript</span>
+          <span class="techstack">GSAP</span>
+        </div>
+        <div class="project-links">
+          <a href="#">Live Demo</a><a href="#">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h4>AI Automated Social Media Management System</h4>
+        <p>
+          AI-powered social media management system with automated post creation,content posting and
+          analytics.
+        </p>
+        <div class="techstack-list">
+          <span class="techstack">Python</span>
+          <span class="techstack">React</span>
+          <span class="techstack">Tailwind CSS</span>
+          <span class="techstack">JavaScript</span>
+          <span class="techstack">GSAP</span>
+        </div>
+        <div class="project-links">
+          <a href="#">Live Demo</a><a href="#">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h4>AI Powered Sales Dashboard and Analytics System</h4>
+        <p>
+          AI-powered sales analytics dashboard with real-time data
+          visualization and predictive insights.
+        </p>
+        <div class="techstack-list">
+          <span class="techstack">React</span>
+          <span class="techstack">Tailwind CSS</span>
+          <span class="techstack">JavaScript</span>
+          <span class="techstack">GSAP</span>
+        </div>
+        <div class="project-links">
+          <a href="#">Live Demo</a><a href="#">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h4>School Portal with Enrollment and Attendance Monitoring System</h4>
+        <p>
+          Online portal for managing student enrollment and attendance tracking.
+        </p>
+        <div class="techstack-list">
+          <span class="techstack">HTML</span>
+          <span class="techstack">CSS</span>
+          <span class="techstack">PHP</span>
+          <span class="techstack">MySQL</span>
+          <span class="techstack">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="#">Live Demo</a><a href="#">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h4>White-Label E-Commerce Platform for Independent Merchants</h4>
+        <p>
+          Online e-commerce platform for local merchants with pickup and delivery options.
+        </p>
+        <div class="techstack-list">
+          <span class="techstack">HTML</span>
+          <span class="techstack">CSS</span>
+          <span class="techstack">PHP</span>
+          <span class="techstack">MySQL</span>
+          <span class="techstack">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="#">Live Demo</a><a href="#">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h3 class="section-title">
+      Tech Stack <a href="#" class="view-all">View All →</a>
+    </h3>
+
+    <div class="skills-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">PHP</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">Tailwind CSS</div>
+      <div class="skill">Git</div>
+      <div class="skill">GSAP</div>
+    </div>
+  </section>
+
+  <footer>© 2026 EJ Soriano. All rights reserved.</footer>
+
+  <button class="floating-theme" onclick="toggleTheme()" aria-label="Toggle theme">
+    <span id="floatingThemeIcon">☀</span>
+  </button>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
